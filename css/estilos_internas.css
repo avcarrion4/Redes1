@@ -1,0 +1,175 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	background-color: #f2f2f2;
+	font-family: arial;
+	height: 100%;
+
+}
+header{
+	height: 100%;
+	background:url(../img/puerta.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #999;
+
+}
+input, select, label{
+	width: 20%;
+	margin: 1em 1em 0;
+	font-size: 1.1em;
+	font-family: arial;
+	letter-spacing: 0.3px;
+	
+}
+span{
+	width: 50%;
+	margin: 1em 1em 1em;
+	font-size: 1.1em;
+	font-family: arial;
+	letter-spacing: 0.3px;
+}
+
+.form-control{
+	margin-left: 1em;
+	padding: 0.5em 1em;
+	width: 30%;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+
+header h1{
+	font-family: 'Josefin Slab';
+	color: blue;
+	padding: 1em;
+}
+
+header h1 span.slogan{
+	font-size: 0.6em;
+	color: black;
+	text-shadow: 3px 3px 4px blue;
+}
+
+
+
+
+
+main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.servicios, .database, .tipos, .contactos{
+	padding: 14em 1em;
+}
+
+footer{
+	background: blue;
+	color: #ccc;
+	text-align: center;
+}
+footer h6{
+	padding: 3em 0;
+}
+.alert{
+	background-color: red; 
+	color: #f6f6f6; 
+	display: block;
+	font: bold 16px/40px sans-serif;
+	height: 40px;
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+	top: -45px; width: 100%;
+}
+
+.serviciodetalle {
+	width: 50%;
+
+	background: #333;
+	display: inline-block;
+	text-align: justify;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #333;
+
+}
+	
+.serviciodetalleL{
+	width: 50%;
+
+	background: #333;
+	display: inline-block;
+	text-align: justify;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px #333;
+
+}
+.serviciodetalle img, .tipodetalle img{
+	width: 100%;
+
+	transition: 0.5s ease-in-out;
+	transform:  0.5s ease-in-out;
+	border-radius: 10px 10px 0 0;
+}
+
+
+.serviciodetalle img:hover{
+	filter: grayscale(90%);
+	/*filter: saturate(90%);*/
+	transform: scale(1.3);
+	/*Para algunos navegador
+	-webkit-transform:scale(1.3);*/
+	transition: 0.5s ease-in-out;
+}
+
+.serviciodetalle h3, .serviciodetalle p, .serviciodetalleL h3, .serviciodetalleL p{
+	padding: 1em;
+	color: white;
+
+}
+.serviciodetalle p, .serviciodetalleL p{
+	font-size: 0.8em;
+}
+
+h2{
+	font-size: 3em;
+	color: red;
+	text-transform: uppercase;
+	font-family: 'Josefin Slab';
+}
+
+.tipodetalle h3{
+	color: #81F7F3;
+	padding: 0.5em 0; 
+	text-align: center;
+}
+
+.tipodetalle img:hover{
+	border-radius: 50%;
+	transform: rotate(90deg);
+	box-shadow: 4px 4px 6px #fff;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+tr:hover {background-color: #81BEF7;}
+
+@media only screen and(max-width: 480px){
+	.tipodetalle, .serviciodetalle{
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}
+@media only screen and (max-width: 800px){
+	.tipodetalle, .serviciodetalle{
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+}
